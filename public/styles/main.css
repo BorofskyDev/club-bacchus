@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@300;400;700;900&display=swap');
+
+:root {
+    --clr-primary: 268 100% 50%;
+    /* #7700FF, rgb(119, 0, 255) */
+
+    --clr-secondary: 358 100% 50%;
+    /* #FF0009,  rgb(255, 0, 9) */
+
+    --clr-accent: 51 100% 50%;
+    /* #FFD700, rgb(255, 215, 0) */
+
+    --clr-light: 0 0% 90%;
+    /* #E6E6E6, rgb(230, 230, 230) */
+
+    --clr-dark: 270 100% 1%;
+    /* #020004, rgba(2, 0, 4, 1) */
+
+    /* Font-Family */
+
+    --ff-heading:  'Julius Sans One', sans-serif;
+    --ff-body: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+body {
+    font-family: var(--ff-body);
+    font-size: 1rem;
+    background-color: hsl(var(--clr-dark));
+    overflow-x: hidden;
+}

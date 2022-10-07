@@ -1,0 +1,148 @@
+@import 'main.css';
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: var(--ff-heading);
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: hsl(var(--clr-primary));
+  font-weight: 700;
+  transform: scale(1);
+  transition: all 800ms;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  background-image: linear-gradient(
+    45deg,
+    #7700FF,
+    #FF0009
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 2s infinite alternate-reverse;
+  transform: scale(1.1);
+  letter-spacing: 5px;
+}
+
+@keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin: 0 0.5em;
+}
+
+.nav__link {
+    padding: 0.625em;
+    color: hsl(var(--clr-light));
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transform: scale(1);
+    transition: all 250ms;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    background-color: hsl(var(--clr-secondary));
+    box-shadow: 1px 1px 10px rgba(230, 230, 230, 0.7);
+    border-radius: 5px;
+    transform: scale(1.2);
+    letter-spacing: 3px;
+}
+
+.header__toggle,
+.header__close {
+    color: white;
+    display: none;
+}
+
+@media (max-width: 35em) {
+    header {
+        height: 3em;
+        justify-content: space-between;
+        padding: 0 1.25em;
+    }
+
+    .header__logo {
+        font-size: 1.5rem;
+    }
+
+    .header__toggle {
+        display: inline;
+        font-size: 2em;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .header__toggle:hover,
+    .header__toggle:focus {
+        background-color: hsl(var(--clr-primary));
+    }
+
+    .header__close {
+        position: absolute;
+        right: 1.5em;
+        display: block;
+        font-size: 2em;
+        border-radius: 50%;
+        cursor: pointer;
+        order: 1;
+    }
+
+    .header__close:hover,
+    .header__close:focus {
+        background-color: hsl(var(--clr-secondary));
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: black;
+        width: 60%;
+        height: 100vh;
+        padding: 1.5em 0;
+        z-index: 100;
+        transition: all 0.5s ease-in-out;
+        border-radius: 0 0 0 50%;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .nav__item {
+        margin: 5em 0;
+    }
+
+    .show {
+        right: 0;
+    }
+}
