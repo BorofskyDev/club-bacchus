@@ -36,8 +36,7 @@
 .hero-text:focus {
     font-size: 11rem;
     letter-spacing: 10px;
-    text-shadow: 0 0 10px hsl(var(--clr-primary)),
-    0 0 20px hsl(var(--clr-secondary))
+    
     
 }
 
