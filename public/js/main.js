@@ -2,6 +2,7 @@ import '../styles/main.css';
 import '../styles/navbar.css';
 import '../styles/hero.css';
 import '../styles/about.css';
+import '../styles/amenities.css';
 
 const navMenu = document.getElementById('nav-menu');
 const toggleMenu = document.getElementById('toggle-menu');

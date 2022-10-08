@@ -16,7 +16,7 @@
   font-family: var(--ff-heading);
   letter-spacing: 1px;
   font-size: 1.5rem;
-  color: hsl(var(--clr-primary));
+  color: hsl(var(--clr-accent));
   font-weight: 700;
   transform: scale(1);
   transition: all 800ms;

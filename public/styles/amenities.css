@@ -1,6 +1,6 @@
 @import 'main.css';
 
-.about {
+.amenities {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -10,7 +10,17 @@
   max-width: 1200px;
 }
 
-.about__content {
+.amenities__image {
+  background-image: url(../images/promo/promo2.jpg);
+  background-color: rgb(255, 0, 9, 0.7);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 100vh;
+  width: 100%;
+}
+
+.amenities__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,27 +70,30 @@
   }
 }
 
-.about__title {
+.amenities__title {
+  font-size: 3rem;
   text-transform: uppercase;
-  font-size: 1.2em;
-  padding-top: 1.5em;
-  padding-bottom: 0.5em;
-  letter-spacing: 1px;
-}
-
-.about__logo {
+  letter-spacing: 3px;
+  padding-bottom: 1rem;
   font-family: var(--ff-heading);
-  letter-spacing: 4px;
-  font-size: 3.5em;
-  color: hsl(var(--clr-accent));
-  padding-bottom: 0.5em;
-  transform: scale(1);
-  transition: all 800ms;
+  text-shadow: 0 0 6px #000;
+  text-align: center;
 }
 
-.about__logo:hover,
-.about__logo:focus {
-  background-image: linear-gradient(45deg, #ffd700, #020004, #ff0009);
+.amenities__list {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2em 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #000;
+}
+
+.amenities__list--item {
+  padding: 1em 0;
+}
+
+.amenities__vip {
+  background-image: linear-gradient(45deg, #ffd700, #ffd700, #ff0009);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -88,7 +101,7 @@
   background-position: -100%;
   animation: animatedText 4s infinite alternate-reverse;
   transform: scale(1.1);
-  letter-spacing: 5px;
+  text-shadow: 0 0 0;
 }
 
 @keyframes animatedText {
@@ -101,48 +114,29 @@
   }
 }
 
-.about__subtitle {
-  font-size: 0.9em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding-bottom: 1.5em;
-  text-align: center;
-}
-
-.about__text {
-  line-height: 1.3;
-  max-width: 70%;
-  text-align: center;
-  padding-top: 4em;
-}
-
-.about__content--logo {
-  text-transform: uppercase;
-  padding: 0 0.4em;
+.amenities__logo {
+  color: hsl(var(--clr-accent));
+  font-size: 2rem;
   font-family: var(--ff-heading);
   letter-spacing: 1px;
-  font-weight: bold;
-  color: hsl(var(--clr-accent));
-  text-shadow: 0 0 2px hsl(var(--clr-dark));
-  font-size: 1.5rem;
+  display: block;
+  padding-top: 0.3em;
 }
 
-.about__image {
-  background-image: url(../images/promo/promo1.jpg);
-  background-color: rgba(255, 0, 9, 0.9);
-  background-size: cover;
-  background-position: 30% center;
-  background-blend-mode: multiply;
-  height: 100vh;
-  width: 100%;
-}
+@media (max-width: 35em) {
+  .amenities {
+    flex-direction: column-reverse;
+  }
 
-@media (max-width: 35em){
-    .about {
-        flex-direction: column;
-    }
+  .amenities__container {
+    max-width: 100%;
+  }
 
-    .about__container {
-        max-width: 100%;
-    }
+  .amenities__title {
+    font-size: 2rem;
+  }
+
+  .amenities__list {
+    font-size: 1rem;
+  }
 }
