@@ -31,9 +31,11 @@ closeMenu.addEventListener('keydown', () => {
 // CARD
 
 function getCards() {
-  let cardHTML = ``
+  let cardHTML = ``;
+
   cardData.forEach(function (card) {
     cardHTML += `
+    
     
       <div class="cta__card">
           <div class="cta__content">
@@ -42,16 +44,18 @@ function getCards() {
             <p class="cta__text">${card.text}
             </p>
             <h4 class="cta__price">Price: &euro;<span>${card.price}</span></h4>
-            <button class="cta__pay" id="cta-pay">Pay Now</button>
+            <button class="cta__pay"  id='cta-pay'>Pay Now</button>
           </div>
-      </div>
-    `;
+          </div>
+          `;
   });
-  return cardHTML
+  return cardHTML;
 }
 
-function render () {
+
+
+function render() {
   document.getElementById('cta-container').innerHTML = getCards();
 }
 
-render()
+render();
