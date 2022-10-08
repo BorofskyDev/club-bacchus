@@ -3,6 +3,7 @@ import '../styles/navbar.css';
 import '../styles/hero.css';
 import '../styles/about.css';
 import '../styles/amenities.css';
+import '../styles/cta.css';
 
 const navMenu = document.getElementById('nav-menu');
 const toggleMenu = document.getElementById('toggle-menu');
