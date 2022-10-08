@@ -1,0 +1,48 @@
+@import 'main.css';
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.hero > .bg-video {
+    width: 100%;
+    height: 100%;
+    z-index: -1
+}
+
+.hero > .hero__text {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10rem;
+    font-weight: 900;
+    font-family: var(--ff-body);
+    mix-blend-mode: multiply;
+    user-select: none;
+    transition: all 500ms ease-in-out
+} 
+
+.hero__text:hover,
+.hero-text:focus {
+    font-size: 11rem;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px hsl(var(--clr-primary)),
+    0 0 20px hsl(var(--clr-secondary))
+    
+}
+
+@media (max-width: 45em) {
+    .hero > .hero__text {
+        font-size: 3rem;
+    }
+}
