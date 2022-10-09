@@ -146,25 +146,28 @@
         <h1 class="pay__title">Payment</h1>
         <p class="pay__total">Total Due: &euro;3.000</p>
         <div class="pay__card">
-          <p>Bank</p>
-          <label for="cardNum" class="pay__number"><span class="sr-only">Card Number (Disabled</span></label>
-          <input type="number" id="cardNum" name="cardNum" placeholder="Enter Card Number (Disabled)" disabled>
-          <label for="expDate" class="pay__Date"><span class="sr-only">Exp Date</span> </label>
-          <input type="month" id="expDate" name="expDate" placeholder="Enter Exp Date (disabled)" disabled>
-          <label for="cvv" class="pay__cvv"><span class="sr-only">CVV</span>Enter CVV (Input Disabled) </label>
-          <input type="number" id="payCvv" name="payCvv" placeholder="CVV" disabled>
-          <label for="name" class="payName"><span class="sr-only">Enter Name on Card (disabled)</span></label>
-          <input type="text" id="payName" name="payName" placeholder="Enter name on card" disabled>
+          <p>bacchus</p>
+          <img src="/public/images/chip.png" alt="smart chip for credit card" class="pay__chip">
+          <label for="cardNum"><span class="sr-only">Card Number (Disabled</span></label>
+          <input type="number" class="pay__number" id="cardNum" name="cardNum"
+            placeholder="Enter Card Number (Disabled)" disabled>
+          <label for="expDate"><span class="sr-only">Exp Date</span> </label>
+          <input type="month" class="pay__date" id="expDate" name="expDate" placeholder="Enter Exp Date (disabled)"
+            disabled>
+          <label for="cvv"><span class="sr-only">Enter CVV (Input Disabled)</span> </label>
+          <input type="number" class="pay__cvv" id="payCvv" name="payCvv" placeholder="CVV" disabled>
+          <label for="name"><span class="sr-only">Enter Name on Card (disabled)</span></label>
+          <input type="text" class="pay__name" id="payName" name="payName" placeholder="Enter name on card" disabled>
         </div>
-        <p class="pay__email">Enter the email where you want your pass sent</p>
-        <input type="email" id="email" name="email" placeholder="enter your email" disabled>
+        <p>Enter the email where you want your pass sent</p>
+        <input type="email" class="pay__email" id="email" name="email" placeholder="enter your email" disabled>
+        <button class="pay__btn" id="pay-btn"><span>Pay</span><i></i></button>
         <p class="pay__disclaimer">This is not a real club.
           This is a website demo for <a href="#" target="__blank">BorofskyDev</a>.
-          Any information you enter will be sent off into the eternal void of the
-          internet. DO NOT ENTER YOUR REAL INFORMATION!!! You can click the pay
-          button to get to the next screen.
+          All user input has been blocked. You can click the pay
+          button to get to close this screen. If you like what you've seen on this site 
+          and want to see what I can do for you, please visit my site!
         </p>
-        <button class="pay__btn" id="pay-btn">Pay</button>
       </div>
     </div>
   </section>

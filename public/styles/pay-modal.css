@@ -2,8 +2,8 @@
 
 .pay__modal {
   display: inline;
-  /* position: fixed; */
-  right: 0;
+  position: fixed;
+  right: -200%;
   left: 0;
   top: 0;
   bottom: 0;
@@ -42,5 +42,210 @@
   max-height: 100%;
   width: 100%;
   padding: 3em 1em;
-  
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.pay__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.pay__total {
+  font-size: 1.5rem;
+}
+
+.pay__card {
+  position: relative;
+  width: 400px;
+  height: 220px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  background: linear-gradient(
+    333deg,
+    rgba(119, 0, 255, 0.6),
+    rgba(255, 0, 9, 0.6)
+  );
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 11s ease infinite;
+  -moz-animation: AnimationName 11s ease infinite;
+  animation: AnimationName 11s ease infinite;
+}
+
+.pay__card p {
+  float: right;
+  margin: 2.5em 2em 1em 0;
+  text-transform: uppercase;
+  color: hsl(var(--clr-accent));
+  text-shadow: 0 0 2px hsl(var(--clr-dark));
+}
+
+.pay__chip {
+  width: 13%;
+  transform: rotate(270deg);
+  margin: 2em 0 0 2em;
+}
+
+.pay__number {
+  text-align: center;
+  margin: 0.7em;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pay__number::placeholder {
+  color: hsl(var(--clr-light));
+}
+
+.pay__date {
+  margin: 0 0.2em 0.1em 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.pay__date::placeholder {
+  color: hsl(var(--clr-light));
+}
+
+.pay__cvv {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 20%;
+}
+
+.pay__cvv::placeholder {
+  color: hsl(var(--clr-light));
+}
+
+.pay__name {
+  margin: 0.5em 0 0 1em;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.pay__name::placeholder {
+  color: hsl(var(--clr-light));
+}
+
+.pay__email {
+  margin: 0.5em 0 1em 0;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.pay__email::placeholder {
+  color: hsl(var(--clr-light));
+}
+
+.pay__btn {
+  position: relative;
+  margin: 1em auto 5em auto;
+  border: none;
+  background-image: linear-gradient(
+    240deg,
+    hsl(275deg 46% 30%) 1%,
+    hsl(269deg 43% 32%) 26%,
+    hsl(262deg 41% 34%) 36%,
+    hsl(255deg 38% 36%) 45%,
+    hsl(248deg 36% 37%) 52%,
+    hsl(241deg 34% 39%) 58%,
+    hsl(234deg 32% 41%) 65%,
+    hsl(228deg 30% 43%) 72%,
+    hsl(221deg 28% 45%) 81%,
+    hsl(214deg 26% 47%) 100%
+  );
+  color: hsl(var(--clr-light));
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 50px;
+  transition: 0.5s;
+}
+
+.pay__btn:hover,
+.pay__btn:focus {
+  letter-spacing: 0.25em;
+  background: hsl(var(--clr-primary));
+  color: hsl(var(--clr-primary));
+  box-shadow: 0 0 35px hsl(var(--clr-primary));
+}
+
+.pay__btn::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: hsl(var(--clr-dark));
+}
+
+.pay__btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.pay__btn i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.pay__btn i::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 100%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: hsl(var(--clr-dark));
+  border: 2px solid hsl(var(--clr-primary));
+  transition: 0.5s;
+}
+
+.pay__btn:hover i::before,
+.pay__btn:focus i::before {
+  left: 0%;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 33px 33px hsl(var(--clr-secondary));
+}
+
+.pay__btn i::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: hsl(var(--clr-dark));
+  border: 2px solid hsl(var(--clr-primary));
+  transition: 0.5s;
+}
+
+.pay__btn:hover i::after,
+.pay__btn:focus i::after {
+  left: 100%;
+  transform: translateX(-50%) rotate(-45deg);
+  box-shadow: 33px -33px hsl(var(--clr-secondary));
+}
+
+.pay__disclaimer {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  margin: 0 3em;
+}
+
+.pay__disclaimer a {
+  font-size: 1rem;
+  color: hsl(var(--clr-accent));
+  cursor: pointer;
 }
