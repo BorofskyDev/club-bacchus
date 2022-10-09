@@ -30,6 +30,7 @@ closeMenu.addEventListener('keydown', () => {
   navMenu.classList.remove('show');
 });
 
+
 // CARD BUTTON EVENT LISTENDER
 
 document.addEventListener('click', function (e) {

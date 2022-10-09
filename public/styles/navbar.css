@@ -3,13 +3,15 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  padding: 1.5em 0;
+  padding: 1.5em 5em;
   align-items: center;
+  z-index: 100;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  padding: 0 3em;
 }
 
 .header__logo {
@@ -59,14 +61,16 @@
   color: hsl(var(--clr-light));
   text-transform: uppercase;
   font-size: 1rem;
+  border-radius: 5px;
   letter-spacing: 1px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.7);
   transform: scale(1);
   transition: all 250ms;
 }
 
 .nav__link:hover,
 .nav__link:focus {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   transform: scale(1.2);
   letter-spacing: 3px;
@@ -78,6 +82,11 @@
   color: white;
   display: none;
 }
+
+
+
+
+
 
 @media (max-width: 35em) {
   header {
