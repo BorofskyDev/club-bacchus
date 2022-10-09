@@ -170,6 +170,7 @@
   font-weight: 400;
   padding: 10px 50px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .pay__btn:hover,
@@ -250,11 +251,10 @@
   cursor: pointer;
 }
 
-
 @media (max-width: 35em) {
-    .pay__container {
-        flex-direction: column;
-    }
+  .pay__container {
+    flex-direction: column;
+  }
 }
 
 .thanks {
@@ -267,5 +267,5 @@
 
 .thank-you a {
   font-size: 1.3rem;
-  color: hsl(var(--clr-accent))
+  color: hsl(var(--clr-accent));
 }

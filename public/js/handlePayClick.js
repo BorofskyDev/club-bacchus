@@ -52,7 +52,7 @@ function secondOffer() {
     payModal.style.right = '0';
   });
   vipBtn.addEventListener('click', () => {
-    addOn += 3000;
+    addOn += 1500;
     totalPrice += addOn;
     paymentModal();
     modal.style.left = '-200%';
