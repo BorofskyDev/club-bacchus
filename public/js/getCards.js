@@ -11,7 +11,7 @@ export function getCards() {
         <h3 class="cta__title">${card.level}</h3>
         <p class="cta__text">${card.text}</p>
          <h4 class="cta__price">Price: &euro;<span>${card.price}</span></h4>
-        <button class="cta__pay" data-pay="${card.id}">Pay Now</button>
+        <button class="cta__pay" data-pay="${card.id}">Join Now</button>
       </div>
     </div>
             `;
