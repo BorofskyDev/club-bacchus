@@ -11,6 +11,17 @@
     height: 100vh;
     width: 100%;
     z-index: 1000;
+    transition: all 300ms ease-in;
+}
+
+.modal__close {
+    font-size: 1.4em;
+    cursor: pointer;
+    background: transparent;
+    color: hsl(var(--clr-light));
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    border: 1px solid hsl(var(--clr-accent))
 }
 
 .checkout__modal {
@@ -27,7 +38,7 @@
   background-image: url(../images/promo/promo6.jpg);
   background-color: rgba(255, 0, 9, 0.9);
   background-size: cover;
-  background-position: 30% center;
+  background-position: center;
   background-blend-mode: multiply;
   min-height: 100vh;
   width: 100%;
@@ -48,6 +59,7 @@
 }
 
 .checkout__title {
+    font-family: var(--ff-heading);
   text-align: center;
   text-transform: uppercase;
   padding: 1em 0;
@@ -82,7 +94,7 @@
 
 .checkout__decline:hover,
 .checkout__decline:focus {
-    transition: scale(1.1)
+    transform: scale(1.1)
 }
 
 .checkout__btns {
@@ -307,4 +319,10 @@
 .club-vip__btn:hover::after,
 .club-vip__btn:focus::after {
     opacity: 1;
+}
+
+@media (max-width: 35em) {
+    .checkout__modal {
+        flex-direction: column;
+    }
 }

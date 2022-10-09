@@ -1,12 +1,14 @@
 import { cardData } from "./cardData";
 
-
+const modal = document.querySelector('.modal');
 
 
 export function handlePayClick(cardId) {
   const targetCardObj = cardData.filter(function (card) {
     return card.uuid === cardId;
   })[0];
+
+  modal.style.display = 'inline'
 
   if (targetCardObj.price === 500) {
     console.log('Basic ');

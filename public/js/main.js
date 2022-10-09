@@ -13,6 +13,8 @@ import { handlePayClick } from './handlePayClick';
 const navMenu = document.getElementById('nav-menu');
 const toggleMenu = document.getElementById('toggle-menu');
 const closeMenu = document.getElementById('close-menu');
+const closeModal = document.getElementById('close-modal')
+const modal = document.querySelector('.modal')
 
 // NAVBAR
 toggleMenu.addEventListener('click', () => {
@@ -39,6 +41,11 @@ document.addEventListener('click', function (e) {
     handlePayClick(e.target.dataset.pay);
   }
 });
+
+// MODAL
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none'
+})
 
 // RENDER
 function render() {
