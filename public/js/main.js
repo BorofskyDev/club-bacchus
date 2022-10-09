@@ -4,6 +4,7 @@ import '../styles/hero.css';
 import '../styles/about.css';
 import '../styles/amenities.css';
 import '../styles/cta.css';
+import '../styles/checkout-modal.css';
 
 import { cardData } from './cardData';
 import { getCards } from './getCards';
