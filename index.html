@@ -35,7 +35,7 @@
 
 
 
-  <main id="content">
+  <main id="about">
     <!------------------------------------------------->
     <!--                   HERO                      -->
     <!------------------------------------------------->
@@ -91,13 +91,25 @@
       <div class="cta__container" id="cta-container">
       </div>
     </section>
+
+    <!------------------------------------------------->
+    <!--                LAST CALL                    -->
+    <!------------------------------------------------->
+
+
+
+    <!------------------------------------------------->
+    <!--                 CONTACT                     -->
+    <!------------------------------------------------->
+
+
   </main>
 
   <!------------------------------------------------->
   <!--              CHECKOUT MODAL                 -->
   <!------------------------------------------------->
-  <div class="modal">
-    <section class="checkout__modal">
+  <section class="modal">
+    <div class="checkout__modal">
       <div class="checkout__section">
         <button class="modal__close" id="close-modal">X</button>
         <h2 class="checkout__title">live limitless</h2>
@@ -107,22 +119,57 @@
         <button class="checkout__decline">No Thanks</button>
         <div class="checkout__btns">
           <div class="aurora">
-            <p class="aurora__price">Aurora <span>- &euro;1.000</span></p>
+            <p class="aurora__price">Aurora <span>- &euro;1000</span></p>
             <button class="aurora__btn">Join Aurora</button>
           </div>
           <div class="varangian">
-            <p class="varangian__price">Varangian <span>- &euro;1.000</span></p>
+            <p class="varangian__price">Varangian <span>- &euro;1000</span></p>
             <button class="varangian__btn">Join Varangian</button>
           </div>
           <div class="club-vip">
-            <p class="club-vip__price">Club VIP <span>- &euro;1.500</span></p>
+            <p class="club-vip__price">Club VIP <span>- &euro;1500</span></p>
             <button class="club-vip__btn">Club VIP</button>
           </div>
         </div>
       </div>
       <div class="checkout__img">
-    </section>
+  </section>
   </div>
+
+  <!------------------------------------------------->
+  <!--                PAY MODAL                    -->
+  <!------------------------------------------------->
+  <section class="pay__modal">
+    <div class="pay__container">
+      <div class="pay__img"></div>
+      <div class="pay__content">
+        <h1 class="pay__title">Payment</h1>
+        <p class="pay__total">Total Due: &euro;3.000</p>
+        <div class="pay__card">
+          <p>Bank</p>
+          <label for="cardNum" class="pay__number"><span class="sr-only">Card Number (Disabled</span></label>
+          <input type="number" id="cardNum" name="cardNum" placeholder="Enter Card Number (Disabled)" disabled>
+          <label for="expDate" class="pay__Date"><span class="sr-only">Exp Date</span> </label>
+          <input type="month" id="expDate" name="expDate" placeholder="Enter Exp Date (disabled)" disabled>
+          <label for="cvv" class="pay__cvv"><span class="sr-only">CVV</span>Enter CVV (Input Disabled) </label>
+          <input type="number" id="payCvv" name="payCvv" placeholder="CVV" disabled>
+          <label for="name" class="payName"><span class="sr-only">Enter Name on Card (disabled)</span></label>
+          <input type="text" id="payName" name="payName" placeholder="Enter name on card" disabled>
+        </div>
+        <p class="pay__email">Enter the email where you want your pass sent</p>
+        <input type="email" id="email" name="email" placeholder="enter your email" disabled>
+        <p class="pay__disclaimer">This is not a real club.
+          This is a website demo for <a href="#" target="__blank">BorofskyDev</a>.
+          Any information you enter will be sent off into the eternal void of the
+          internet. DO NOT ENTER YOUR REAL INFORMATION!!! You can click the pay
+          button to get to the next screen.
+        </p>
+        <button class="pay__btn" id="pay-btn">Pay</button>
+      </div>
+    </div>
+  </section>
+
+
   <script type="module" src="public/js/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

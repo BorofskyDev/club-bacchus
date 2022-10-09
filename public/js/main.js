@@ -5,6 +5,7 @@ import '../styles/about.css';
 import '../styles/amenities.css';
 import '../styles/cta.css';
 import '../styles/checkout-modal.css';
+import '../styles/pay-modal.css';
 
 import { cardData } from './cardData';
 import { getCards } from './getCards';
@@ -44,7 +45,7 @@ document.addEventListener('click', function (e) {
 
 // MODAL
 closeModal.addEventListener('click', () => {
-  modal.style.display = 'none'
+  modal.style.left = '-200%'
 })
 
 // RENDER

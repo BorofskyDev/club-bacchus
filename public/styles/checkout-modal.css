@@ -1,17 +1,17 @@
 @import 'main.css';
 
 .modal {
-    display: none;
+    display: inline;
     position: fixed;
     right: 0;
-    left: 0;
+    left: -200%;
     top: 0;
     bottom: 0;
     margin: auto;
     height: 100vh;
     width: 100%;
     z-index: 1000;
-    transition: all 300ms ease-in;
+    transition: all 500ms ease-in;
 }
 
 .modal__close {

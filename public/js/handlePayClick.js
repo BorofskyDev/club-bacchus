@@ -8,7 +8,7 @@ export function handlePayClick(cardId) {
     return card.uuid === cardId;
   })[0];
 
-  modal.style.display = 'inline'
+  modal.style.left = '0'
 
   if (targetCardObj.price === 500) {
     console.log('Basic ');
