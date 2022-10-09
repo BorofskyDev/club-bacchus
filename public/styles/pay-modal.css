@@ -249,3 +249,23 @@
   color: hsl(var(--clr-accent));
   cursor: pointer;
 }
+
+
+@media (max-width: 35em) {
+    .pay__container {
+        flex-direction: column;
+    }
+}
+
+.thanks {
+  padding: 3em;
+}
+
+.thank-you {
+  padding: 1em;
+}
+
+.thank-you a {
+  font-size: 1.3rem;
+  color: hsl(var(--clr-accent))
+}

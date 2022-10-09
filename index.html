@@ -114,21 +114,21 @@
         <button class="modal__close" id="close-modal">X</button>
         <h2 class="checkout__title">live limitless</h2>
         <p class="checkout__subtitle">add a VIP year membership
-          to Club Aurora, Club Varangian, or become a Club VIP.
+          to Club Aurora, Club Varangian, or gain global access by becoming a Club VIP.
         </p>
-        <button class="checkout__decline">No Thanks</button>
+        <button class="checkout__decline" id="decline-btn">No Thanks</button>
         <div class="checkout__btns">
           <div class="aurora">
             <p class="aurora__price">Aurora <span>- &euro;1000</span></p>
-            <button class="aurora__btn">Join Aurora</button>
+            <button class="aurora__btn" id="aur-btn">Join Aurora</button>
           </div>
           <div class="varangian">
             <p class="varangian__price">Varangian <span>- &euro;1000</span></p>
-            <button class="varangian__btn">Join Varangian</button>
+            <button class="varangian__btn" id="varan-btn">Join Varangian</button>
           </div>
           <div class="club-vip">
             <p class="club-vip__price">Club VIP <span>- &euro;1500</span></p>
-            <button class="club-vip__btn">Club VIP</button>
+            <button class="club-vip__btn" id="vip-btn">Club VIP</button>
           </div>
         </div>
       </div>
@@ -142,9 +142,9 @@
   <section class="pay__modal">
     <div class="pay__container">
       <div class="pay__img"></div>
-      <div class="pay__content">
-        <h1 class="pay__title">Payment</h1>
-        <p class="pay__total">Total Due: &euro;3.000</p>
+      <div class="pay__content" id="payment-recieved">
+        <h1 class="pay__title" id="payment">Payment</h1>
+        
         <div class="pay__card">
           <p>bacchus</p>
           <img src="/public/images/chip.png" alt="smart chip for credit card" class="pay__chip">
