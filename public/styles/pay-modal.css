@@ -216,7 +216,7 @@
 .pay__btn:focus i::before {
   left: 0%;
   transform: translateX(-50%) rotate(45deg);
-  box-shadow: 33px 33px hsl(var(--clr-secondary));
+  box-shadow: 33px 35px hsl(var(--clr-secondary));
 }
 
 .pay__btn i::after {
@@ -236,7 +236,7 @@
 .pay__btn:focus i::after {
   left: 100%;
   transform: translateX(-50%) rotate(-45deg);
-  box-shadow: 33px -33px hsl(var(--clr-secondary));
+  box-shadow: 33px -35px hsl(var(--clr-secondary));
 }
 
 .pay__disclaimer {
