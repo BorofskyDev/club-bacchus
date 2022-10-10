@@ -6,6 +6,7 @@ import '../styles/amenities.css';
 import '../styles/cta.css';
 import '../styles/checkout-modal.css';
 import '../styles/pay-modal.css';
+import '../styles/last-call.css';
 
 import { cardData } from './cardData';
 import { getCards } from './getCards';

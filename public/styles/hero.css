@@ -24,7 +24,7 @@
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 10rem;
+    font-size: clamp(3rem, 30vw - 7.5rem, 15rem);
     font-weight: 900;
     font-family: var(--ff-body);
     mix-blend-mode: multiply;
@@ -32,16 +32,5 @@
     transition: all 500ms ease-in-out
 } 
 
-.hero__text:hover,
-.hero-text:focus {
-    font-size: 11rem;
-    letter-spacing: 10px;
-    
-    
-}
 
-@media (max-width: 45em) {
-    .hero > .hero__text {
-        font-size: 3rem;
-    }
-}
+

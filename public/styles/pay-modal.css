@@ -269,3 +269,12 @@
   font-size: 1.3rem;
   color: hsl(var(--clr-accent));
 }
+
+@media (max-width: 35em) {
+  .pay__container {
+    flex-direction: column-reverse;
+  }
+  .pay__img {
+    display: none;
+  }
+}
