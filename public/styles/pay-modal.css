@@ -67,8 +67,8 @@
   backdrop-filter: blur(5px);
   background: linear-gradient(
     333deg,
-    rgba(119, 0, 255, 0.6),
-    rgba(255, 0, 9, 0.6)
+    rgba(119, 0, 255, 0.2),
+    rgba(255, 0, 9, 0.2)
   );
   background-size: 400% 400%;
 
