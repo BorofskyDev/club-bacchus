@@ -1,0 +1,201 @@
+@import 'main.css';
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: hsl(var(--clr-light));
+  overflow: hidden;
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
+.contact__img {
+  background-image: url(../images/promo/promo4.jpg);
+  background-color: rgb(255, 0, 9, 0.9);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 122vh;
+  width: 100%;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 3em 0;
+  background-color: hsl(var(--clr-primary));
+  background: linear-gradient(130deg, #7700ff, #020004);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+.contact__header {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 1rem;
+  font-family: var(--ff-heading);
+  text-shadow: 0 0 6px #000;
+  text-align: center;
+}
+
+.contact__content {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.3;
+  padding: 2em 0.5em;
+  text-shadow: 0 0 2px #000;
+}
+
+.contact__form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+}
+
+.form__info input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid hsl(var(--clr-accent));
+    padding: 0.1em 0;
+    margin: 1em 0;
+    color: hsl(var(--clr-light))
+}
+
+.form__info input::placeholder {
+    text-align: center;
+    color: hsl(var(--clr-accent));
+}
+
+.form textarea {
+    background: transparent;
+    height: 100px;
+    width: 400px;
+    font-size: 1.3rem;
+    font-family: var(--ff-body);
+    color: hsl(var(--clr-light));
+    border: 1px solid hsl(var(--clr-accent));
+    border-radius: 10px;
+}
+
+.form textarea::placeholder {
+    color: hsl(var(--clr-accent));
+    text-align: center;
+}
+
+.form__btn {
+  position: relative;
+  margin: 1em auto 5em auto;
+  border: none;
+  background-image: linear-gradient(
+    240deg,
+    hsl(275deg 29% 9%) 1%,
+    hsl(269deg 26% 11%) 26%,
+    hsl(262deg 24% 13%) 36%,
+    hsl(255deg 20% 15%) 45%,
+    hsl(248deg 18% 16%) 52%,
+    hsl(241deg 16% 18%) 58%,
+    hsl(234deg 14% 22%) 65%,
+    hsl(228deg 14% 24%) 72%,
+    hsl(221deg 12% 26%) 81%,
+    hsl(214deg 9% 28%) 100%
+  );
+  color: hsl(var(--clr-light));
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 50px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  letter-spacing: 0.25em;
+  background: hsl(var(--clr-secondary));
+  color: hsl(var(--clr-secondary));
+  box-shadow: 0 0 35px hsl(var(--clr-secondary));
+}
+
+.form__btn::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: hsl(var(--clr-dark));
+}
+
+.form__btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.form__btn i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.form__btn i::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 100%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: hsl(var(--clr-dark));
+  border: 2px solid hsl(var(--clr-secondary));
+  transition: 0.5s;
+}
+
+.form__btn:hover i::before,
+.form__btn:focus i::before {
+  left: 0%;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 40px 43px hsl(var(--clr-accent));
+}
+
+.form__btn i::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: hsl(var(--clr-dark));
+  border: 2px solid hsl(var(--clr-secondary));
+  transition: 0.5s;
+}
+
+.form__btn:hover i::after,
+.form__btn:focus i::after {
+  left: 100%;
+  transform: translateX(-50%) rotate(-45deg);
+  box-shadow: 40px -43px hsl(var(--clr-accent));
+}
+
+@media (max-width: 35em) {
+    .contact {
+        flex-direction: column;
+    }
+    .contact__container {
+        padding: 0.5em 0.8em;
+    }
+}

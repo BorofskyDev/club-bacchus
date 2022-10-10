@@ -67,7 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/public/images/backgrounds/bg3.jpg);
+  background-image: url(/public/images/backgrounds/bg1.jpg);
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.9);
@@ -82,27 +82,94 @@
   font-size: clamp(3rem, 27.5vw - 6.6rem, 14rem);
   letter-spacing: 5px;
   background-image: linear-gradient(
-    45deg,
+    90deg,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
     #ffd700,
     #020004,
     #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
     #020004,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
     #ff0009,
     #020004,
     #e6e6e6,
-    #020004,
+    #e6e6e6,
+    #e6e6e6,
+    #e6e6e6,
+    #e6e6e6,
+    #e6e6e6,
+    #e6e6e6,
+    #e6e6e6,
+    #e6e6e6,
     #e6e6e6,
     #020004,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
+    #ff0009,
     #ff0009,
     #020004,
     #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
+    #7700ff,
     #020004,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
+    #ffd700,
     #ffd700
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  background-size: 400%;
+  background-size: 600%;
   background-position: -100%;
-  animation: animatedText 12s infinite alternate-reverse;
+  animation: animatedText 15s infinite alternate;
 }
