@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  /* padding: 1.5em 5em; */
+  padding: 1.5em 0;
   align-items: center;
   z-index: 100;
 }

@@ -8,6 +8,7 @@ import '../styles/checkout-modal.css';
 import '../styles/pay-modal.css';
 import '../styles/last-call.css';
 import '../styles/contact.css';
+import '../styles/footer.css';
 
 import { cardData } from './cardData';
 import { getCards } from './getCards';
