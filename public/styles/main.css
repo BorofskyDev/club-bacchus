@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@300;400;700;900&display=swap');
 
 :root {
-    --clr-primary: 268 100% 50%;
-    /* #7700FF, rgb(119, 0, 255) */
+  --clr-primary: 268 100% 50%;
+  /* #7700FF, rgb(119, 0, 255) */
 
-    --clr-secondary: 358 100% 50%;
-    /* #FF0008,  rgb(255, 0, 9) */
+  --clr-secondary: 358 100% 50%;
+  /* #FF0008,  rgb(255, 0, 9) */
 
-    --clr-accent: 51 100% 50%;
-    /* #FFD700, rgb(255, 215, 0) */
+  --clr-accent: 51 100% 50%;
+  /* #FFD700, rgb(255, 215, 0) */
 
-    --clr-light: 0 0% 90%;
-    /* #E6E6E6, rgb(230, 230, 230) */
+  --clr-light: 0 0% 90%;
+  /* #E6E6E6, rgb(230, 230, 230) */
 
-    --clr-dark: 270 100% 1%;
-    /* #020004, rgba(2, 0, 4, 1) */
+  --clr-dark: 270 100% 1%;
+  /* #020004, rgba(2, 0, 4, 1) */
 
-    /* Font-Family */
+  /* Font-Family */
 
-    --ff-heading:  'Julius Sans One', sans-serif;
-    --ff-body: 'Roboto', sans-serif;
+  --ff-heading: 'Julius Sans One', sans-serif;
+  --ff-body: 'Roboto', sans-serif;
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a,
@@ -43,10 +43,10 @@ input {
 }
 
 body {
-    font-family: var(--ff-body);
-    font-size: 1rem;
-    background-color: hsl(var(--clr-dark));
-    overflow-x: hidden;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  background-color: hsl(var(--clr-dark));
+  overflow-x: hidden;
 }
 
 /* Access */
@@ -93,9 +93,51 @@ body {
 /* Components */
 
 .container {
-  max-width: 100vw;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  padding: 0 0;
+  color: hsl(var(--clr-light));
+  overflow: hidden;
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
+.image__container {
+  background-color: rgba(255, 0, 9, 0.9);
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 100%;
+}
+
+.container-100 {
+  height: 100vh;
+}
+
+.container-122vh {
+  height: 122vh;
+}
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3em 0;
+  background-color: hsl(var(--clr-primary));
+}
+
+.bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg__left {
+  background-image: url(../images/backgrounds/bg-left.svg);
+}
+
+.bg__right {
+  background-image: url(../images/backgrounds/bg-right.svg);
 }
 
 .title__container {
@@ -105,5 +147,83 @@ body {
   justify-content: center;
   border-top: 1px solid hsl(var(--clr-accent));
   border-bottom: 1px solid hsl(var(--clr-accent));
-  width: 70%
+  width: 70%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+.logo__content--large {
+  font-family: var(--ff-heading);
+  letter-spacing: 4px;
+  font-size: 3.5em;
+  color: hsl(var(--clr-accent));
+  padding-bottom: 0.5em;
+  transform: scale(1);
+  transition: all 800ms;
+}
+
+.logo__content--large:hover,
+.logo__content--large:focus {
+  background-image: linear-gradient(45deg, #ffd700, #020004, #ff0009);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 4s infinite alternate-reverse;
+  transform: scale(1.1);
+  letter-spacing: 5px;
+}
+
+.logo__content--small {
+  text-transform: uppercase;
+  padding: 1em 0.4em;
+  font-family: var(--ff-heading);
+  letter-spacing: 2px;
+  color: hsl(var(--clr-accent));
+  text-shadow: 0 0 2px hsl(var(--clr-dark));
+  font-size: 2.5rem;
+}
+
+.list {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2em 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #000;
+}
+
+.list__item {
+  padding: 1em 0;
+}
+
+@keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+@media (max-width: 35em) {
+  .container {
+    flex-direction: column;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .image__container {
+    height: 100vh;
+  }
+  .list__item {
+    font-size: 1rem;
+  }
 }

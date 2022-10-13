@@ -322,6 +322,9 @@
 }
 
 @media (max-width: 35em) {
+    .modal {
+        overflow-y: scroll;
+    }
     .checkout__modal {
         flex-direction: column;
     }

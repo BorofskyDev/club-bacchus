@@ -35,50 +35,49 @@
 
 
 
+  <!------------------------------------------------->
+  <!--                   HERO                      -->
+  <!------------------------------------------------->
+
+  <section class="hero">
+    <video class="bg-video" autoplay loop muted>
+      <source src="./public/video/video4.mp4" type="video/mp4" />
+    </video>
+    <p class="hero__text">bacchus</p>
+  </section>
+
+  <!------------------------------------------------->
+  <!--                  ABOUT                      -->
+  <!------------------------------------------------->
+
   <main id="about">
-    <!------------------------------------------------->
-    <!--                   HERO                      -->
-    <!------------------------------------------------->
-
-    <section class="hero">
-      <video class="bg-video" autoplay loop muted>
-        <source src="./public/video/video4.mp4" type="video/mp4" />
-      </video>
-      <p class="hero__text">bacchus</p>
-    </section>
-
-    <!------------------------------------------------->
-    <!--                  ABOUT                      -->
-    <!------------------------------------------------->
-
-    <section class="about">
-      <div class="about__content">
+    <section class="container">
+      <div class="content__container bg bg__left">
         <div class="title__container">
-          <h2 class="about__title">club</h2>
-          <h2 class="about__logo">bacchus</h2>
+          <h2 class="title">club</h2>
+          <h2 class="logo__content--large">bacchus</h2>
           <p class="about__subtitle">the hottest party in barcelona</p>
         </div>
         <p class="about__text">
           The owners of Oslo's "Aurora" and Kyiv's "Varangian" are
           proud to bring their newest addition to Barcelona:
-          <span class="about__content--logo">bacchus</span>
         </p>
+        <span class="logo__content--small">bacchus</span>
       </div>
-      <div class="about__image"></div>
-
+      <div class="image__container about__image"></div>
     </section>
 
-    <section class="amenities">
-      <div class="amenities__image"></div>
-      <div class="amenities__content">
+    <section class="container reverse amenities ">
+      <div class="image__container amenities__image"></div>
+      <div class="content__container bg bg__right">
         <h2 class="amenities__title">come experience</h2>
-        <ul class="amenities__list">
-          <li class="amenities__list--item">1 concert room</li>
-          <li class="amenities__list--item">3 dance floors</li>
-          <li class="amenities__list--item">4 wet bars</li>
-          <li class="amenities__list--item">20 private party rooms</li>
-          <li class="amenities__list--item">An exclusive <span class="amenities__vip">VIP</span> program</li>
-          <li class="amenities__list--item">experience<span class="amenities__logo">bacchus</span></li>
+        <ul class="list">
+          <li class="list__item">1 concert room</li>
+          <li class="list__item">3 dance floors</li>
+          <li class="list__item">4 wet bars</li>
+          <li class="list__item">20 private party rooms</li>
+          <li class="list__item">An exclusive <span class="amenities__vip">VIP</span> program</li>
+          <li class="list__item">experience<span class="logo__content--small amenities__logo">bacchus</span></li>
         </ul>
       </div>
     </section>
@@ -96,14 +95,19 @@
     <!--                LAST CALL                    -->
     <!------------------------------------------------->
 
-    <section class="last-call">
-      <div class="last-call__container">
-        <h2 class="last-call__title">don't be left outside</h2>
-        <p class="last-call__content">Skip the line.</p>
-        <p class="last-call__content">Define your night</p>
-        <p class="last-call__content">Party amongst the gods</p>
+    <section class="container">
+      <div class="content__container bg bg__left">
+        <h3 class="title">don't be left out</h3>
+        <p class="last-call__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem reiciendis ullam
+          rem adipisci, magni itaque ipsum? Accusantium, eos animi! Excepturi esse tempore magni praesentium accusamus
+          quidem laborum cupiditate necessitatibus tempora.</p>
+        <ul class="list">
+          <li class="list__item">Skip the line</li>
+          <li class="list__item">Define your night</li>
+          <li class="list__item">Party like a god</li>
+        </ul>
       </div>
-      <div class="last-call__img"></div>
+      <div class="image__container last-call__img"></div>
     </section>
 
     <section class="filler">
@@ -112,10 +116,10 @@
     <!------------------------------------------------->
     <!--                 CONTACT                     -->
     <!------------------------------------------------->
-    <section class="contact" id="contact">
-      <div class="contact__img"></div>
-      <div class="contact__container">
-        <div class="contact__header">Want a site like this?</div>
+    <section class="container .container-122vh" id="contact">
+      <div class="image__container contact__img"></div>
+      <div class="content__container bg bg__right">
+        <div class="title">Want a site like this?</div>
         <p class="contact__content">If you want a site similar to this, or
           are looking for someone who can design and build your site for you,
           please feel free to contact me here.
@@ -150,23 +154,32 @@
     <footer class="footer">
       <div class="footer__creator">
         <h4 class="footer__creator--social">Visit me at:</h4>
-        <a href="https://joelborofsky.com" target="_blank" >My Website</a>
-        <a href="https://codepen.io/borofskyDev" target="_blank" >CodePen</a>
-        <a href="https://github.com/BorofskyDev" target="_blank" >GitHub</a>
-        <a href="https://www.linkedin.com/in/joelborofsky/" target="_blank" >LinkedIn</a>
-        <a href="https://twitter.com/DevBorofsky" target="_blank" >Twitter</a>
+        <a href="https://joelborofsky.com" target="_blank">My Website</a>
+        <a href="https://codepen.io/borofskyDev" target="_blank">CodePen</a>
+        <a href="https://github.com/BorofskyDev" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/joelborofsky/" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/DevBorofsky" target="_blank">Twitter</a>
       </div>
       <div class="footer__acknowledge">
-        <h4 class="footer__acknowledge--title">Credit for photos and video:</h4> 
-        <a href=" https://www.pexels.com/video/purple-paint-dropping-on-the-water-7566038/" target="_blank">Hero Section Video by MART PRODUCTION | </a>
-        <a href=" https://www.pexels.com/photo/band-playing-on-stage-2747446/" target="_blank">Last Call background Photo by Wolfgang | </a>
-        <a href=" https://www.pexels.com/photo/people-inside-a-club-2034851/" target="_blank">Payment Package Selection Photo by Edoardo Tommasin | </a>
-        <a href=" https://www.pexels.com/photo/woman-sitting-indoors-3394217/" target="_blank">First About Photo by Inga Seliverstova | </a>
-        <a href=" https://www.pexels.com/photo/woman-standing-near-the-staircase-9405848/" target="_blank">Second About Photo Photo by Bimbim Sindu | </a>
-        <a href=" https://www.pexels.com/photo/women-at-the-party-3419649/" target="_blank">Payment Photo by cottonbro | </a>
-        <a href=" https://www.pexels.com/photo/group-of-people-standing-waiting-outside-the-bar-1185440/" target="_blank">Contact Photo by mentatdgt | </a>
-        <a href=" https://www.pexels.com/photo/man-posing-with-background-of-an-illuminated-signboard-1809390/" target="_blank">Last Call Photo by Garret Schappacher | </a>
-        <a href=" https://www.pexels.com/photo/man-in-dark-bar-5055493/" target="_blank">Package Add-on Photo by Ketut Subiyanto</a>
+        <h4 class="footer__acknowledge--title">Credit for photos and video:</h4>
+        <a href=" https://www.pexels.com/video/purple-paint-dropping-on-the-water-7566038/" target="_blank">Hero Section
+          Video by MART PRODUCTION | </a>
+        <a href=" https://www.pexels.com/photo/band-playing-on-stage-2747446/" target="_blank">Last Call background
+          Photo by Wolfgang | </a>
+        <a href=" https://www.pexels.com/photo/people-inside-a-club-2034851/" target="_blank">Payment Package Selection
+          Photo by Edoardo Tommasin | </a>
+        <a href=" https://www.pexels.com/photo/woman-sitting-indoors-3394217/" target="_blank">First About Photo by Inga
+          Seliverstova | </a>
+        <a href=" https://www.pexels.com/photo/woman-standing-near-the-staircase-9405848/" target="_blank">Second About
+          Photo Photo by Bimbim Sindu | </a>
+        <a href=" https://www.pexels.com/photo/women-at-the-party-3419649/" target="_blank">Payment Photo by cottonbro |
+        </a>
+        <a href=" https://www.pexels.com/photo/group-of-people-standing-waiting-outside-the-bar-1185440/"
+          target="_blank">Contact Photo by mentatdgt | </a>
+        <a href=" https://www.pexels.com/photo/man-posing-with-background-of-an-illuminated-signboard-1809390/"
+          target="_blank">Last Call Photo by Garret Schappacher | </a>
+        <a href=" https://www.pexels.com/photo/man-in-dark-bar-5055493/" target="_blank">Package Add-on Photo by Ketut
+          Subiyanto</a>
       </div>
     </footer>
   </main>
@@ -247,4 +260,3 @@
 </body>
 
 </html>
-

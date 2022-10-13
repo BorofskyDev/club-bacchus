@@ -1,73 +1,10 @@
 @import 'main.css';
 
-.amenities {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  color: hsl(var(--clr-light));
-  overflow: hidden;
-  min-height: 100vh;
-  max-width: 1200px;
-}
+
 
 .amenities__image {
   background-image: url(../images/promo/promo2.jpg);
-  background-color: rgb(255, 0, 9, 0.7);
-  background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
-  height: 122vh;
-  width: 100%;
-}
-
-.amenities__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 3em 0;
-  background-color: hsl(var(--clr-primary));
-  background: linear-gradient(130deg, #7700ff, #020004);
-  background-size: 400% 400%;
-
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
 }
 
 .amenities__title {
@@ -78,18 +15,6 @@
   font-family: var(--ff-heading);
   text-shadow: 0 0 6px #000;
   text-align: center;
-}
-
-.amenities__list {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 2em 0;
-  text-transform: uppercase;
-  text-shadow: 0 0 2px #000;
-}
-
-.amenities__list--item {
-  padding: 1em 0;
 }
 
 .amenities__vip {
@@ -114,20 +39,11 @@
   }
 }
 
-.amenities__logo {
-  color: hsl(var(--clr-accent));
-  font-size: 2rem;
-  font-family: var(--ff-heading);
-  letter-spacing: 1px;
+.amenities__logo { 
   display: block;
-  padding-top: 0.3em;
 }
 
 @media (max-width: 35em) {
-  .amenities {
-    flex-direction: column-reverse;
-  }
-
   .amenities__container {
     max-width: 100%;
   }
